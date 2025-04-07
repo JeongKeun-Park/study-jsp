@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>b_jdbc</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+     <servlet-name>JoinController</servlet-name>
+     <servlet-class>com.app.controller.member.JoinController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>JoinController</servlet-name>
+     <url-pattern>/member/join</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>LoginController</servlet-name>
+     <servlet-class>com.app.controller.member.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LoginController</servlet-name>
+     <url-pattern>/member/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>MyPageController</servlet-name>
+     <servlet-class>com.app.controller.member.MyPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>MyPageController</servlet-name>
+     <url-pattern>/member/mypage</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>LogOutController</servlet-name>
+     <servlet-class>com.app.controller.member.LogOutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LogOutController</servlet-name>
+     <url-pattern>/member/logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>UpdateController</servlet-name>
+     <servlet-class>com.app.controller.member.UpdateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>UpdateController</servlet-name>
+     <url-pattern>/member/update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>DeleteController</servlet-name>
+     <servlet-class>com.app.controller.member.DeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>DeleteController</servlet-name>
+     <url-pattern>/member/delete</url-pattern>
+  </servlet-mapping>
+  <session-config>
+     <session-timeout>60</session-timeout>
+  </session-config>
+</web-app>
+
+
+
+
+
+
+
+
+
+
+
+
